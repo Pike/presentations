@@ -16,6 +16,21 @@
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/moz.css" id="theme">
+		<style type="text/css">
+			#localization_table th {
+			    font-family: "League Gothic", Impact, sans-serif;
+			    width: 0.6em;
+			    text-align: center;
+			    padding: 0;
+			    font-size: 2.11em;
+			}
+
+			#localization_table td {
+			    padding: 0.3em 0 0;
+			    font-size: 0.8em;
+			    text-align: center;
+			}
+		</style>
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -48,10 +63,36 @@
 				</section>
 
 				<section>
-
-					<h2>
-						<strong>L</strong><ruby>o<rt>1</rt>c<rt>2</rt>a<rt>3</rt>l<rt>4</rt>i<rt>5</rt>z<rt>6</rt>i<rt>7</rt>a<rt>8</rt>t<rt>9</rt>o<rt>0</rt></ruby><strong>n</strong><br>
-					</h2>
+					<table id="localization_table">
+					    <tr>
+					        <th>L</th>
+					        <th>o</th>
+					        <th>c</th>
+					        <th>a</th>
+					        <th>l</th>
+					        <th>i</th>
+					        <th>z</th>
+					        <th>a</th>
+					        <th>t</th>
+					        <th>i</th>
+					        <th>o</th>
+					        <th>n</th>
+					    </tr>
+					    <tr>
+					        <td></td>
+					        <td>1</td>
+					        <td>2</td>
+					        <td>3</td>
+					        <td>4</td>
+					        <td>5</td>
+					        <td>6</td>
+					        <td>7</td>
+					        <td>8</td>
+					        <td>9</td>
+					        <td>10</td>
+					        <td></td>
+					    </tr>
+					</table>
 				</section>
 
 				<!-- Example of nested vertical slides -->
@@ -181,8 +222,47 @@ cd OBJ_DIR/browser/locales
 ./mach installers-fr LOCALE_MERGEDIR=$PWD/fr  # l10n package
 					</code></pre>
 				</section>
+
 				<section>
-					<h2></h2>
+					<h2>Identifying strings</h2>
+					<ul>
+						<li style="text-decoration: line-through;">by English string (optional context)</li>
+						<li>by "ID"</li>
+						<li><q>good variable name</q></li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>To Change or Not To Change</h2>
+					<ul>
+						<li>Semantic Versioning</li>
+						<li>Not:
+						<ul>
+							<li>Typo</li>
+							<li>Grammar</li>
+						</ul>
+						</li>
+						<li>Yes:
+						<ul>
+							<li>Opt-out turned opt-in, etc</li>
+						</ul>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Help needed:</h2>
+					<ul>
+						<li><code>C++</code> API</li>
+						<li>async</li>
+						<li>named parameters</li>
+						<li>type safe</li>
+					</ul>
+				</section>
+				<section>
+					<h2>See Also:</h2>
+					<p>Friday 9am</p>
+					<blockquote>Going Faster with Firefox and Localization</blockquote>
+					<p>Southern 1</p>
 				</section>
 
 			</div>
